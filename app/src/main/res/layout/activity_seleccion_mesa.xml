@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD9E7"
+    app:layoutDescription="@xml/activity_seleccion_mesa_scene"
+    tools:context=".SeleccionMesaActivity">
+
+    <Button
+        android:id="@+id/m5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:backgroundTint="#EED09D"
+        android:backgroundTintMode="add"
+        android:onClick="siguiente"
+        android:text="@string/Mesa5"
+        android:textColor="@color/material_dynamic_neutral30"
+        app:layout_constraintStart_toStartOf="@+id/m1"
+        app:layout_constraintTop_toTopOf="@+id/m1"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/m8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#EED09D"
+        android:onClick="siguiente"
+        android:text="@string/Mesa8"
+        android:textColor="@color/material_dynamic_neutral30"
+        app:layout_constraintStart_toStartOf="@+id/m3"
+        app:layout_constraintTop_toBottomOf="@+id/m3"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/m7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#EED09D"
+        android:onClick="siguiente"
+        android:text="@string/Mesa7"
+        android:textColor="@color/material_dynamic_neutral30"
+        app:layout_constraintStart_toStartOf="@+id/m2"
+        app:layout_constraintTop_toBottomOf="@+id/m2"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/m6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#EED09D"
+        android:onClick="siguiente"
+        android:text="@string/Mesa6"
+        android:textColor="@color/material_dynamic_neutral30"
+        app:layout_constraintStart_toStartOf="@+id/m1"
+        app:layout_constraintTop_toBottomOf="@+id/m1"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/m1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#EED09D"
+        android:onClick="siguiente"
+        android:text="@string/Mesa1"
+        android:textColor="@color/material_dynamic_neutral30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/m2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#EED09D"
+        android:onClick="siguiente"
+        android:text="@string/Mesa2"
+        android:textColor="@color/material_dynamic_neutral30"
+        app:layout_constraintStart_toStartOf="@+id/m1"
+        app:layout_constraintTop_toBottomOf="@+id/m1"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/m3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#EED09D"
+        android:onClick="siguiente"
+        android:text="@string/Mesa3"
+        android:textColor="@color/material_dynamic_neutral30"
+        app:layout_constraintStart_toStartOf="@+id/m2"
+        app:layout_constraintTop_toBottomOf="@+id/m2"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/m4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#EED09D"
+        android:onClick="siguiente"
+        android:text="@string/Mesa4"
+        android:textColor="@color/material_dynamic_neutral30"
+        app:layout_constraintStart_toStartOf="@+id/m3"
+        app:layout_constraintTop_toBottomOf="@+id/m3"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:onClick="Salir"
+        android:text="@string/Salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m4"
+        tools:ignore="VisualLintButtonSize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

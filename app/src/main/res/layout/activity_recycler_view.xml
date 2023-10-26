@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD9E7"
+    tools:context=".RecyclerViewActivity">
+
+    <Button
+        android:id="@+id/botonBebidas"
+        android:layout_width="82dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#B71C1C"
+        android:onClick="onClick"
+        android:paddingLeft="0px"
+        android:paddingRight="0px"
+        android:text="Bebidas"
+        android:textSize="35px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonEntrantes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botonEntrantes"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="248dp"
+        android:backgroundTint="#20C12C"
+        android:onClick="onClick"
+        android:paddingLeft="0px"
+        android:paddingRight="0px"
+        android:text="Raciones"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonBebidas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="491dp"
+        android:backgroundTint="#3F000F"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonEntrantes" />
+
+    <Button
+        android:id="@+id/botonCarne"
+        android:layout_width="82dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#F57F17"
+        android:onClick="onClick"
+        android:paddingLeft="0px"
+        android:paddingRight="0px"
+        android:text="Carne"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/botonEntrantes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonPescado"
+        android:layout_width="82dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#01579B"
+        android:onClick="onClick"
+        android:paddingLeft="0px"
+        android:paddingRight="0px"
+        android:text="Pescado"
+        app:layout_constraintStart_toEndOf="@+id/botonCarne"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonPostre"
+        android:layout_width="82dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#3F000F"
+        android:onClick="onClick"
+        android:paddingLeft="0px"
+        android:paddingRight="0px"
+        android:text="Postre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/botonPescado"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerResumen"
+        android:layout_width="match_parent"
+        android:layout_height="1000px"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonSalirComanda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerId"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="55px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerId" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Cantidad"
+        android:textColor="@color/black"
+        android:textSize="55px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerId" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Precio"
+        android:textColor="@color/black"
+        android:textSize="55px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerId" />
+
+    <Button
+        android:id="@+id/botonSalirComanda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="392dp"
+        android:text="Salir comanda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

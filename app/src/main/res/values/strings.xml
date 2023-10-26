@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Proyecto_Prueba</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Password">Contraseña</string>
+    <string name="BotonIngresar">Ingresar</string>
+    <string name="Mesa1">Mesa 1</string>
+    <string name="Mesa2">Mesa 2</string>
+    <string name="Mesa3">Mesa 3</string>
+    <string name="Mesa4">Mesa 4</string>
+    <string name="Mesa5">Mesa 5</string>
+    <string name="Mesa6">Mesa 6</string>
+    <string name="Mesa7">Mesa 7</string>
+    <string name="Mesa8">Mesa 8</string>
+    <string name="Comanda">Añadir</string>
+    <string name="Imprimir">Imprimir cuenta</string>
+    <string name="Pagar">Pagar</string>
+    <string name="Volver">Volver</string>
+    <string name="Salir">Salir</string>
+</resources>
